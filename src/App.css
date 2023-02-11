@@ -2,9 +2,9 @@
   margin: 0;
 }
 .App {
-  background-image: url("/src/images/space-wallpaper.jpg");
+  background-image: url("../src/assets/images/wallpaper.jpg");
   background-size: contain;
-  color: whitesmoke;
+  color: aliceblue;
   height: 60rem;
   text-align: center;
 }
