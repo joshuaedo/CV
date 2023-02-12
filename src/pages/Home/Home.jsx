@@ -9,9 +9,9 @@ export default class Home extends Component {
     return (
       <>
         <Hero />
-        <Stacks />
+        {/* <Stacks />
         <Projects />
-        <Contact />
+        <Contact /> */}
       </>
     );
   }

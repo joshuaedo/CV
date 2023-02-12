@@ -1,0 +1,7 @@
+.Hero {
+  background-image: url("./wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: aliceblue; */
+  height: 44.1rem;
+}

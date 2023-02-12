@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import "./Hero.css";
 
-export default class Hero extends Component {
-  render() {
-    return <div>Hero</div>;
-  }
+export default function Hero() {
+  return <div className="Hero"></div>;
 }
