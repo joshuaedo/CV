@@ -5,4 +5,4 @@ import nodejs from "./icons/nodejs.png";
 import react from "./icons/react.png";
 import vite from "./icons/vite.png";
 
-export default [js, jquery, nextjs, nodejs, react, vite];
+export let icons = [js, jquery, nextjs, nodejs, react, vite];
