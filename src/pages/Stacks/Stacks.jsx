@@ -1,9 +1,7 @@
-import React, { Component } from 'react'
+import "./Stacks.css";
+// import { motion } from "framer-motion";
+// import { useRef, useEffect, useState } from "react";
 
-export default class Stacks extends Component {
-  render() {
-    return (
-      <div>Stacks</div>
-    )
-  }
+export default function Stacks() {
+  return <div className="stacks page--background"></div>;
 }
