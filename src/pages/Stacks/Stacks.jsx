@@ -3,5 +3,5 @@ import "./Stacks.css";
 // import { useRef, useEffect, useState } from "react";
 
 export default function Stacks() {
-  return <div className="stacks page--background"></div>;
+  return <div className="stacks page--background">Hello</div>;
 }
