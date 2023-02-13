@@ -8,17 +8,19 @@ export default function Stacks() {
 
   return (
     <div className="stacks page--background">
-      <motion.div className="carousel">
-        <motion.div className="inner-carousel">
-          {icons.map((icon) => {
-            return (
-              <motion.div>
-                <img src={icon} alt="" />
-              </motion.div>
-            );
-          })}
+      <div className="container">
+        <motion.div className="carousel">
+          <motion.div className="inner-carousel">
+            {icons.map((icon) => {
+              return (
+                <motion.div className="item">
+                  <img src={icon} alt="" />
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 }
