@@ -1,7 +1,7 @@
-export default[
+export const cardData = [
   {
     id: "",
-    img: ".../assets/images/",
+    img: { src: "./images/", alt: "" },
     name: "",
     description: "",
   },

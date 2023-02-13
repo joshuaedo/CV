@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import Card from "./Card";
+// import $ from "jquery";
 
-export class Projects extends Component {
-  render() {
-    return (
-      <div>Projects</div>
-    )
-  }
+export default function Projects() {
+  return (
+    <div className="Projects page--background">
+      <Card />;
+      <Card />;
+    </div>
+  );
 }
-
-export default Projects

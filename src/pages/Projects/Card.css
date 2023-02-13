@@ -1,0 +1,41 @@
+.card {
+  transform-style: preserve-3d;
+  position: relative;
+  margin: 1rem;
+  padding: 1.5625rem;
+  width: 21.875rem;
+  height: 31.25rem;
+  border-radius: 1.875rem !important;
+  display: inline-block !important;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(0.175rem) !important;
+  -webkit-backdrop-filter: blur(0.175rem) !important;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.12) !important;
+  transition: all 0.1s ease;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card--img {
+  position: relative;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+.card--text {
+  margin-top: 0.3rem;
+  width: 100%;
+  color: rgb(220, 220, 220);
+  text-decoration: none !important;
+}
