@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 import "./Card.css";
 
-export default function Card() {
+export default function Card(props) {
   const [xRotation, setXRotation] = useState(0);
   const [yRotation, setYRotation] = useState(0);
   const cardRef = useRef(null);
@@ -34,8 +34,8 @@ export default function Card() {
   }
 
   return (
-    <div className="col">
-      <a href="https://www.aresesylvester.com" exact>
+    <div className="col d-flex align-items-center justify-content-center">
+      <a href={props.href} exact>
         <div
           className="card"
           ref={cardRef}
@@ -46,19 +46,13 @@ export default function Card() {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <img
-            src={require("./images/arese.png")}
-            alt="Arese Sylvester's Website"
-            className="card--img"
-          />
+          <img src={props.imgSrc} alt={props.imgAlt} className="card--img" />
           <div className="card--text">
             <h3 className="card--title" ref={titleRef}>
-              Arese Sylvester
+              {props.title}
             </h3>
             <p className="card--description" ref={descRef}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum eos fugit fugiat doloribus totam corrupti laboriosam
-              mollitia eligendi tempora corporis.
+              {props.description}
             </p>
           </div>
         </div>
