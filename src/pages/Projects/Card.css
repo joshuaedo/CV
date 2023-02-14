@@ -40,5 +40,6 @@
   text-decoration: none !important;
 }
 .card--title {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
