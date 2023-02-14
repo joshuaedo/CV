@@ -1,1 +1,29 @@
+.Hero {
+  transition: all 0.1s ease;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
+.hero--img {
+  width: 30rem;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero--img {
+    width: 20rem;
+    border-radius: 0.5rem;
+    align-self: center;
+    display: block;
+    margin: 2rem auto 2rem auto;
+  }
+}

@@ -2,15 +2,16 @@ i {
   margin-right: 10px;
 }
 .logo {
-  padding: 15px;
+  padding: 0.5rem 0 0.5rem 1rem;
   color: white;
   pointer-events: none;
   text-decoration: none;
   margin-right: 45rem;
+  font-size: 2rem;
 }
 
 .navbar-mainbg {
-  background-color: #000000;
+  /* background-color: #000000; */
   padding: 0rem !important;
 }
 #navbarSupportedContent {
@@ -105,22 +106,22 @@ i {
 }
 @media (min-width: 768px) {
   .logo {
-    margin-right: 25rem;
+    margin-right: 17rem;
   }
 }
 @media (min-width: 900px) {
   .logo {
-    margin-right: 28rem;
+    margin-right: 20rem;
   }
 }
 @media (min-width: 1100px) {
   .logo {
-    margin-right: 31rem;
+    margin-right: 23rem;
   }
 }
 @media (min-width: 1300px) {
   .logo {
-    margin-right: 38rem;
+    margin-right: 26rem;
   }
 }
 @media (max-width: 61.9375rem) {
