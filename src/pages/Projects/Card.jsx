@@ -34,33 +34,35 @@ export default function Card() {
   }
 
   return (
-    <a href="https://www.aresesylvester.com" exact>
-      <div
-        className="card"
-        ref={cardRef}
-        style={{
-          transform: `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
-        }}
-        onMouseMove={handleMouseMove}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <img
-          src={require("./images/arese.png")}
-          alt="Arese Sylvester's Website"
-          className="card--img"
-        />
-        <div className="card--text">
-          <h3 className="card--title" ref={titleRef}>
-            Arese Sylvester
-          </h3>
-          <p className="card--description" ref={descRef}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            eos fugit fugiat doloribus totam corrupti laboriosam mollitia
-            eligendi tempora corporis.
-          </p>
+    <div className="col">
+      <a href="https://www.aresesylvester.com" exact>
+        <div
+          className="card"
+          ref={cardRef}
+          style={{
+            transform: `rotateX(${xRotation}deg) rotateY(${yRotation}deg)`,
+          }}
+          onMouseMove={handleMouseMove}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img
+            src={require("./images/arese.png")}
+            alt="Arese Sylvester's Website"
+            className="card--img"
+          />
+          <div className="card--text">
+            <h3 className="card--title" ref={titleRef}>
+              Arese Sylvester
+            </h3>
+            <p className="card--description" ref={descRef}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum eos fugit fugiat doloribus totam corrupti laboriosam
+              mollitia eligendi tempora corporis.
+            </p>
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   );
 }

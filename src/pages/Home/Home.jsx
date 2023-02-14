@@ -5,5 +5,5 @@ export default function Home() {
     <div className="Home page--background">
       <Hero />
     </div>
-  )
+  );
 }

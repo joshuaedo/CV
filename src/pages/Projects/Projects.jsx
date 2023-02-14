@@ -3,9 +3,11 @@ import Card from "./Card";
 
 export default function Projects() {
   return (
-    <div className="Projects page--background">
-      <Card />;
-      <Card />;
+    <div className="Projects page--background container">
+      <div className="row">
+        <Card />;
+        <Card />;
+      </div>
     </div>
   );
 }
