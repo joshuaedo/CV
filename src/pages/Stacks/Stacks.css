@@ -1,6 +1,16 @@
 .container {
   margin: auto;
-  color: white;
+  /* color: white; */
+}
+
+.scroll--container {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.scroll {
+  float: right;
+  color: grey;
 }
 .item {
   /* margin-top: 10%; */
@@ -17,12 +27,12 @@
 }
 
 .carousel--description {
-  margin-top: 10%;
+  margin-top: 15%;
   padding-left: 1rem;
 }
 
 .inner-carousel {
-  margin-top: 10%;
+  margin-top: 2%;
   display: flex;
   /* background: aqua; */
 }

@@ -14,11 +14,6 @@
   color: grey;
 }
 
-p {
-  word-break: break-word;
-  hyphens: auto;
-}
-
 .ovhidden {
   overflow: hidden;
 }
