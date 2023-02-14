@@ -12,12 +12,15 @@ export default function Hero() {
           <img src={joshua} alt="joshua edo" className="hero--img" />
         </div>
         <div className="col w-100 d-block d-lg-inline">
-          <p className="quote">
-            “The most innovative solution to a complex problem is often the
-            simplest one. But as anyone who’s devoted their time to big ideas
-            knows, simple and easy are two very different things.”
-            {/* <br> - Mackey Saturday</br> */}
-          </p>
+          <blockquote className="quote">
+            <i>
+              {" "}
+              “The most innovative solution to a complex problem is often the
+              simplest one. But as anyone who’s devoted their time to big ideas
+              knows, simple and easy are two very different things.”
+            </i>
+          </blockquote>
+          <p className="quote"> - Mackey Saturday</p>
 
           <p className="bio">
             My name is Joshua. I’m a {currentAge} year old frontend web

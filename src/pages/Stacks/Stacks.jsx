@@ -8,7 +8,11 @@ export default function Stacks() {
       <div className="container">
         <motion.div className="carousel" whileTap={{ cursor: "grabbing" }}>
           <motion.div className="carousel--description">
-            <h5>I have significant experience with these tools.</h5>
+            <p>I have significant experience with these tools.</p>
+            <hr></hr>
+            <div className="scroll--container">
+              <span className="scroll">Swipe right--`{">"}` </span>
+            </div>
           </motion.div>
           <motion.div
             drag="x"
