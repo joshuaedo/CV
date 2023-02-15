@@ -23,13 +23,13 @@ export default function Projects() {
           imgSrc={require("./images/arese.png")}
           imgAlt="Arese Sylvester - Home"
           title="Arese Sylvester"
-          description="The portfolio website for Arese sylvester"
+          description="A portfolio website tailor-made for Arese sylvester"
           href="https://www.aresesylvester.com/"
         />
         <Card
           key={2}
           imgSrc={require("./images/ryter.png")}
-          imgAlt="Ryter - Home "
+          imgAlt="Ryter - Home"
           title="Ryter"
           description="A productivity app for writers"
           href="https://ryter.netlify.app/"
@@ -39,7 +39,7 @@ export default function Projects() {
           imgSrc={require("./images/cleander.png")}
           imgAlt="Cleander"
           title="Cleander"
-          description="A landing page for Cleander"
+          description="A single  page website for a pseudo housekeeping company"
           href="https://thecleander.netlify.app/"
         />
         <Card
@@ -47,7 +47,7 @@ export default function Projects() {
           imgSrc={require("./images/business-card.png")}
           imgAlt="Joshua Edo's Business Card"
           title="Business Card"
-          description="A business card made with react"
+          description="A business card made out of reusable components"
           href="https://joshuaedocard.netlify.app/"
         />
         <Card
@@ -55,7 +55,7 @@ export default function Projects() {
           imgSrc={require("./images/drum.png")}
           imgAlt="Drum Kit"
           title="Drum Kit"
-          description="A drum kit"
+          description="A web app that plays different drum sounds"
           href="https://josh-drum.netlify.app/"
         />
         <Card
@@ -63,7 +63,7 @@ export default function Projects() {
           imgSrc={require("./images/dice.png")}
           imgAlt="Dice Game"
           title="Dice Game"
-          description="A simple dice game"
+          description="A decision making website built on Math.random()"
           href="https://thesimpledicegame.netlify.app/"
         />
         <Card
@@ -71,7 +71,7 @@ export default function Projects() {
           imgSrc={require("./images/portfolio.png")}
           imgAlt="Joshua Edo - Home"
           title="CV - Demo"
-          description="My first portfolio website"
+          description="A portfolio website made with HTML and CSS"
           href="https://joshuaedo-cv2.netlify.app/"
         />
       </div>
