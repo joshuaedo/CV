@@ -11,7 +11,7 @@ export default function Stacks() {
             <p>I have significant experience with these tools.</p>
             <hr></hr>
             <div className="scroll--container">
-              <span className="scroll">Swipe right--`{">"}` </span>
+              <span className="scroll"> {"< --"} Swipe left </span>
             </div>
           </motion.div>
           <motion.div
