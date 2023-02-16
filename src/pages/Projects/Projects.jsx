@@ -34,16 +34,9 @@ export default function Projects() {
           description="A productivity app for writers"
           href="https://ryter.netlify.app/"
         />
+
         <Card
           key={3}
-          imgSrc={require("./images/cleander.png")}
-          imgAlt="Cleander"
-          title="Cleander"
-          description="A single  page website for a pseudo housekeeping company"
-          href="https://thecleander.netlify.app/"
-        />
-        <Card
-          key={4}
           imgSrc={require("./images/business-card.png")}
           imgAlt="Joshua Edo's Business Card"
           title="Business Card"
@@ -51,7 +44,7 @@ export default function Projects() {
           href="https://joshuaedocard.netlify.app/"
         />
         <Card
-          key={5}
+          key={4}
           imgSrc={require("./images/drum.png")}
           imgAlt="Drum Kit"
           title="Drum Kit"
@@ -59,7 +52,7 @@ export default function Projects() {
           href="https://josh-drum.netlify.app/"
         />
         <Card
-          key={6}
+          key={5}
           imgSrc={require("./images/dice.png")}
           imgAlt="Dice Game"
           title="Dice Game"
@@ -67,12 +60,20 @@ export default function Projects() {
           href="https://thesimpledicegame.netlify.app/"
         />
         <Card
-          key={7}
+          key={6}
           imgSrc={require("./images/portfolio.png")}
           imgAlt="Joshua Edo - Home"
           title="CV - Demo"
           description="A portfolio website made with HTML and CSS"
           href="https://joshuaedo-cv2.netlify.app/"
+        />
+        <Card
+          key={7}
+          imgSrc={require("./images/cleander.png")}
+          imgAlt="Cleander"
+          title="Cleander"
+          description="A single  page website for a pseudo housekeeping company"
+          href="https://thecleander.netlify.app/"
         />
       </div>
     </div>
