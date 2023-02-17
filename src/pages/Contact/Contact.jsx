@@ -5,7 +5,7 @@ import { contactConfig } from "./content_option";
 
 export default function Contact() {
   return (
-    <Container className="page--background">
+    <Container>
       <div className="big--mac">
         <Row className="sec_sp">
           <Col lg="5" className="mb-5">

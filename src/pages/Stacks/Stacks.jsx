@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Stacks() {
   return (
-    <div className="stacks page--background container">
+    <div className="stacks container">
       <div className="carousel--description">
         <p>I have significant experience with these tools.</p>
         <hr></hr>
