@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function Projects() {
   return (
-    <div className="Projects page--background container">
+    <div className="Projects container">
       <div className="row">
         {/* Map Function */}
         {/* {cardData.map((props) => {
