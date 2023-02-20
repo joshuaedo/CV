@@ -67,8 +67,16 @@ export default function Projects() {
           description="A portfolio website made with HTML and CSS"
           href="https://joshuaedo-cv2.netlify.app/"
         />
-        <Card
+         <Card
           key={7}
+          imgSrc={require("./images/style-your-div.png")}
+          imgAlt="Style-Your-Div"
+          title="Style-Your-Div"
+          description="Style a div by editing text right in the DOM"
+          href="https://style-your-div.netlify.app/"
+        />
+        <Card
+          key={8}
           imgSrc={require("./images/cleander.png")}
           imgAlt="Cleander"
           title="Cleander"
