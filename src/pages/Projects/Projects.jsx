@@ -36,6 +36,14 @@ export default function Projects() {
         />
         <Card
           key={3}
+          imgSrc={require('./images/blog.png')}
+          imgAlt="Joshua Edo's Blog"
+          title='My Blog'
+          description='A blog website built with GraphQL and NextJs'
+          href='https://joshuaedo-blog.vercel.app/'
+        />
+        <Card
+          key={4}
           imgSrc={require('./images/ryter.png')}
           imgAlt='Ryter - Home'
           title='Ryter'
@@ -43,7 +51,7 @@ export default function Projects() {
           href='https://ryter.netlify.app/'
         />
         <Card
-          key={4}
+          key={5}
           imgSrc={require('./images/business-card.png')}
           imgAlt="Joshua Edo's Business Card"
           title='Business Card'
@@ -51,7 +59,7 @@ export default function Projects() {
           href='https://joshuaedocard.netlify.app/'
         />
         <Card
-          key={5}
+          key={6}
           imgSrc={require('./images/drum.png')}
           imgAlt='Drum Kit'
           title='Drum Kit'
@@ -59,7 +67,7 @@ export default function Projects() {
           href='https://josh-drum.netlify.app/'
         />
         <Card
-          key={6}
+          key={7}
           imgSrc={require('./images/dice.png')}
           imgAlt='Dice Game'
           title='Dice Game'
@@ -67,7 +75,7 @@ export default function Projects() {
           href='https://thesimpledicegame.netlify.app/'
         />
         <Card
-          key={7}
+          key={8}
           imgSrc={require('./images/portfolio.png')}
           imgAlt='Joshua Edo - Home'
           title='CV - Demo'
@@ -75,7 +83,7 @@ export default function Projects() {
           href='https://joshuaedo-cv2.netlify.app/'
         />
         <Card
-          key={8}
+          key={9}
           imgSrc={require('./images/style-your-div.png')}
           imgAlt='Style-Your-Div'
           title='Style-Your-Div'
@@ -83,7 +91,7 @@ export default function Projects() {
           href='https://style-your-div.netlify.app/'
         />
         <Card
-          key={9}
+          key={10}
           imgSrc={require('./images/cleander.png')}
           imgAlt='Cleander'
           title='Cleander'
