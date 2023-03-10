@@ -25,8 +25,8 @@ export default function Hero() {
           <p className="bio">
             My name is Joshua. I’m a {currentAge} year old frontend web
             developer living in West Africa, Nigeria. I love Dan Brown's books,
-            the show - How I met your mother, documentaries, pizza, solving
-            complex problems, and silence.
+            Chelsea Football Club, How I met your mother, documentaries, pizza,
+            solving complex problems, and silence.
           </p>
         </div>
       </div>
