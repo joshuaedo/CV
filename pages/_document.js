@@ -1,5 +1,6 @@
-import { Html, Head, Main, NextScript, Script } from "next/document";
+import { Html, Head, Main, NextScript } from "next/document";
 import { Container } from "react-bootstrap";
+import Script from "next/script";
 
 export default function Document() {
   return (
