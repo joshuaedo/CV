@@ -31,15 +31,15 @@ export default function Stacks() {
         >
           {icons.map((icon, index) => {
             return (
-              <motion.div className="item">
-                <Image src={icon} alt="" key={index} />
+              <motion.div className="item" key={index}>
+                <Image src={icon} alt="" />
               </motion.div>
             );
           })}
           {icons.map((icon, index) => {
             return (
-              <motion.div className="item">
-                <Image src={icon} alt="" key={index} />
+              <motion.div className="item" key={index}>
+                <Image src={icon} alt="" />
               </motion.div>
             );
           })}
