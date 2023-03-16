@@ -27,10 +27,10 @@ export default function Stacks() {
             </motion.div>
           );
         })}
-        {icons.map((icon) => {
+        {icons.map((icon, index) => {
           return (
             <motion.div className="item">
-              <img src={icon} alt="" key={icon} />
+              <img src={icon} alt="" key={index} />
             </motion.div>
           );
         })}
