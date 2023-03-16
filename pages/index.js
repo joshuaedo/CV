@@ -33,7 +33,7 @@ export default function Home() {
             <p className="bio">
               My name is Joshua. I’m a {currentAge} year old frontend web
               developer living in West Africa, Nigeria. I love Dan Brown's
-              books, Chelsea Football Club, How I met your mother,
+              books, Chelsea football club, How I met your mother,
               documentaries, pizza, solving complex problems, and silence.
             </p>
           </div>
