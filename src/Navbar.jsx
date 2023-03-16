@@ -1,53 +1,53 @@
-import "./Navbar.css";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
+import './Navbar.css';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-mainbg container">
-      <Link className="logo" to="/" exact>
+    <nav className='navbar navbar-expand-lg navbar-mainbg container'>
+      <Link className='logo' to='/' exact>
         Joshua Edo
       </Link>
 
       <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        className='navbar-toggler'
+        type='button'
+        data-toggle='collapse'
+        data-target='#navbarSupportedContent'
+        aria-controls='navbarSupportedContent'
+        aria-expanded='false'
+        aria-label='Toggle navigation'
       >
-        <i className="fas fa-bars text-white"></i>
+        <i className='fas fa-bars text-white'></i>
       </button>
 
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav ml-auto">
-          <div className="hori-selector">
-            <div className="left"></div>
-            <div className="right"></div>
+      <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+        <ul className='navbar-nav ml-auto'>
+          <div className='hori-selector'>
+            <div className='left'></div>
+            <div className='right'></div>
           </div>
 
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/">
-              <i className="fas fa-home"></i>Home
+          <li className='nav-item'>
+            <NavLink className='nav-link' to='/'>
+              <i className='fas fa-home'></i>Home
             </NavLink>
           </li>
 
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/stacks">
-              <i className="fas fa-server"></i>Stacks
+          <li className='nav-item'>
+            <NavLink className='nav-link' to='/stacks'>
+              <i className='fas fa-server'></i>Stacks
             </NavLink>
           </li>
 
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/projects">
-              <i className="fas fa-code"></i>Projects
+          <li className='nav-item'>
+            <NavLink className='nav-link' to='/projects'>
+              <i className='fas fa-code'></i>Projects
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink className="nav-link" to="/contact">
-              <i className="fas fa-address-book"></i>Contact
+          <li className='nav-item'>
+            <NavLink className='nav-link' to='/contact'>
+              <i className='fas fa-address-book'></i>Contact
             </NavLink>
           </li>
         </ul>
