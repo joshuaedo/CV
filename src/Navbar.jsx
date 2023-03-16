@@ -29,24 +29,24 @@ const Navbar = () => {
           </div>
 
           <li className="nav-item">
-            <NavLink className="nav-link" to="/" exact>
+            <NavLink className="nav-link" to="/">
               <i className="fas fa-home"></i>Home
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink className="nav-link" to="/stacks" exact>
+            <NavLink className="nav-link" to="/stacks">
               <i className="fas fa-server"></i>Stacks
             </NavLink>
           </li>
 
           <li className="nav-item">
-            <NavLink className="nav-link" to="/projects" exact>
+            <NavLink className="nav-link" to="/projects">
               <i className="fas fa-code"></i>Projects
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/contact" exact>
+            <NavLink className="nav-link" to="/contact">
               <i className="fas fa-address-book"></i>Contact
             </NavLink>
           </li>

@@ -1,9 +1,40 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Contact.css";
 import { contactConfig } from "./content_option";
+import { useState } from "react";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  // eslint-disable-next-line
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // send form data to server
+    fetch("/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message }),
+    })
+      .then((res) => {
+        if (res.ok) {
+          setStatus("success");
+          setName("");
+          setEmail("");
+          setMessage("");
+        } else {
+          setStatus("error");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setStatus("error");
+      });
+  };
+
   return (
     <Container>
       <div className="big--mac">
@@ -27,21 +58,21 @@ export default function Contact() {
             </address>
             <div className="social-media-icon">
               <a href="https://github.com/joshuaedo">
-                <i class="fab fa-github icons"></i>
+                <i className="fab fa-github icons"></i>
               </a>
               <a href="https://www.linkedin.com/in/joshuaedo">
-                <i class="fab fa-linkedin icons"></i>
+                <i className="fab fa-linkedin icons"></i>
               </a>
               <a href="https://twitter.com/Thegr8joshua">
-                <i class="fab fa-twitter icons"></i>
+                <i className="fab fa-twitter icons"></i>
               </a>
               <a href="https://www.instagram.com/edo_joshua">
-                <i class="fab fa-instagram icons"></i>
+                <i className="fab fa-instagram icons"></i>
               </a>
             </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form className="contact__form w-100">
+            <form className="contact__form w-100" onSubmit={handleSubmit}>
               <Row>
                 <Col lg="6" className="form-group">
                   <input
@@ -50,6 +81,8 @@ export default function Contact() {
                     name="name"
                     placeholder="Name"
                     type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     required
                   />
                 </Col>
@@ -60,6 +93,8 @@ export default function Contact() {
                     name="email"
                     placeholder="Email"
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </Col>
@@ -70,6 +105,8 @@ export default function Contact() {
                 name="message"
                 placeholder="Message"
                 rows="5"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
               <br />
@@ -80,6 +117,14 @@ export default function Contact() {
                   </button>
                 </Col>
               </Row>
+              {/* {status === "success" && (
+                <div className="alert alert-success">
+                  Message sent successfully
+                </div>
+              )}
+              {status === "error" && (
+                <div className="alert alert-danger">Error sending message</div>
+              )} */}
             </form>
           </Col>
         </Row>

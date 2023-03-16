@@ -40,6 +40,7 @@ code {
 }
 
 .contact__form .form-control {
+  color: white;
   padding: 1.375rem 0.75rem;
   line-height: 1.5;
   background-color: transparent;
