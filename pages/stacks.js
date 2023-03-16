@@ -1,6 +1,6 @@
-import "./Stacks.css";
-import { icons } from "./icons";
+import { icons } from "@/lib/icons";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Stacks() {
   return (
@@ -20,17 +20,17 @@ export default function Stacks() {
         dragConstraints={{ right: 0, left: -4000 }}
         className="carousel"
       >
-        {icons.map((icon) => {
+        {icons.map((icon, index) => {
           return (
             <motion.div className="item">
-              <img src={icon} alt="" key={icon} />
+              <Image src={icon} alt="" key={index} />
             </motion.div>
           );
         })}
         {icons.map((icon, index) => {
           return (
             <motion.div className="item">
-              <img src={icon} alt="" key={index} />
+              <Image src={icon} alt="" key={index} />
             </motion.div>
           );
         })}

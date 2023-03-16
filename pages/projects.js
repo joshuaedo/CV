@@ -1,10 +1,10 @@
-import Card from "./Card";
-import { cardData } from "./cardData";
+import Card from "@/components/Card";
+import { cardData } from "@/lib/cardData";
 
 export default function Projects() {
   console.log(cardData);
   return (
-    <div className="Projects container">
+    <div className="Projects">
       <div className="row">
         {/* Map Function */}
         {cardData.map((props) => (
