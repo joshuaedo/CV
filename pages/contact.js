@@ -4,6 +4,20 @@ import { contactConfig } from "@/lib/content_option";
 import Navbar from "@/components/Navbar";
 
 export default function Contact() {
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const formData = {};
+    Array.from(e.currentTarget.elements).forEach((field) => {
+      if (!field.name) return;
+      formData[field.name] = field.value;
+    });
+    fetch("/api/mail", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
+    console.log(formData);
+  }
+
   return (
     <>
       <Head>
@@ -47,7 +61,11 @@ export default function Contact() {
             </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form className="contact__form w-100">
+            <form
+              className="contact__form w-100"
+              method="post"
+              onSubmit={handleSubmit}
+            >
               <Row>
                 <Col lg="6" className="form-group">
                   <input
