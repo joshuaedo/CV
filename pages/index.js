@@ -24,14 +24,14 @@ export default function Home() {
               <i>
                 {" "}
                 “The most innovative solution to a complex problem is often the
-                simplest one. But as anyone who&`&apos;`s devoted their time to
-                big ideas knows, simple and easy are two very different things.”
+                simplest one. But as anyone who&apos;s devoted their time to big
+                ideas knows, simple and easy are two very different things.”
               </i>
             </blockquote>
             <p className="quote"> - Mackey Saturday</p>
 
             <p className="bio">
-              My name is Joshua. I`&apos;`m a {currentAge} year old frontend web
+              My name is Joshua. I&apos;m a {currentAge} year old frontend web
               developer living in West Africa, Nigeria. I love Dan Brown's
               books, Chelsea football club, How I met your mother,
               documentaries, pizza, solving complex problems, and silence.
