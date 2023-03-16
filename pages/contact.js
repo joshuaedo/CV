@@ -1,10 +1,17 @@
-import { Container, Row, Col } from "react-bootstrap";
-import "./Contact.css";
-import { contactConfig } from "./content_option";
+import { Row, Col } from "react-bootstrap";
+import Head from "next/head";
+import { contactConfig } from "@/lib/content_option";
+import Navbar from "@/components/Navbar";
 
 export default function Contact() {
   return (
-    <Container>
+    <>
+      <Head>
+        <title>Joshua Edo - Contact</title>
+        <meta name="description" content="Contact Joshua Edo" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+      <Navbar />
       <div className="big--mac">
         <Row className="sec_sp">
           <Col lg="5" className="mb-5">
@@ -83,6 +90,6 @@ export default function Contact() {
           </Col>
         </Row>
       </div>
-    </Container>
+    </>
   );
 }
