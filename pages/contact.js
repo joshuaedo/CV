@@ -1,21 +1,53 @@
-import { Row, Col } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 import Head from "next/head";
 import { contactConfig } from "@/lib/content_option";
 import Navbar from "@/components/Navbar";
+import { useState } from "react";
+import { useToast } from "@chakra-ui/react";
+import { sendContactForm } from "@/lib/mail";
+
+const initValues = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+const initState = { values: initValues };
 
 export default function Contact() {
-  async function handleSubmit(e) {
+  const [state, setState] = useState(initState);
+  const toast = useToast();
+  const { values } = state;
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const handleSubmit = async () => {
+    try {
+      await sendContactForm(values);
+      setState(initState);
+      toast({
+        title: "Message sent",
+        status: "success",
+        duration: 2000,
+        position: top,
+      });
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        error: error.message,
+      }));
+    }
+  };
+
+  function handleRefresh(e) {
     e.preventDefault();
-    const formData = {};
-    Array.from(e.currentTarget.elements).forEach((field) => {
-      if (!field.name) return;
-      formData[field.name] = field.value;
-    });
-    fetch("/api/mail", {
-      method: "post",
-      body: JSON.stringify(formData),
-    });
-    console.log(formData);
   }
 
   return (
@@ -61,11 +93,7 @@ export default function Contact() {
             </div>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
-            <form
-              className="contact__form w-100"
-              method="post"
-              onSubmit={handleSubmit}
-            >
+            <Form className="contact__form w-100 mb-5" onSubmit={handleRefresh}>
               <Row>
                 <Col lg="6" className="form-group">
                   <input
@@ -75,6 +103,8 @@ export default function Contact() {
                     placeholder="Name"
                     type="text"
                     required
+                    value={values.name}
+                    onChange={handleChange}
                   />
                 </Col>
                 <Col lg="6" className="form-group">
@@ -85,6 +115,8 @@ export default function Contact() {
                     placeholder="Email"
                     type="email"
                     required
+                    value={values.email}
+                    onChange={handleChange}
                   />
                 </Col>
               </Row>
@@ -95,16 +127,22 @@ export default function Contact() {
                 placeholder="Message"
                 rows="5"
                 required
+                value={values.message}
+                onChange={handleChange}
               ></textarea>
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="button" type="submit">
+                  <button
+                    className="button"
+                    type="submit"
+                    onClick={handleSubmit}
+                  >
                     Send
                   </button>
                 </Col>
               </Row>
-            </form>
+            </Form>
           </Col>
         </Row>
       </div>

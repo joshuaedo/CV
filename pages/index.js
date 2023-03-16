@@ -17,7 +17,12 @@ export default function Home() {
       <div className="Hero">
         <div className="row">
           <div className="col w-100 d-block d-lg-inline">
-            <Image src={joshua} alt="joshua edo" className="hero--img" />
+            <Image
+              src={joshua}
+              alt="joshua edo"
+              className="hero--img"
+              priority
+            />
           </div>
           <div className="col w-100 d-block d-lg-inline">
             <blockquote className="quote">
