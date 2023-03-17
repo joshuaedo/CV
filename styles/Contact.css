@@ -94,12 +94,16 @@ textarea:focus {
 .button {
   border: 1px solid white;
   background-color: transparent;
-  color: grey;
+  color: white;
   width: 4rem;
-  padding: 0.2rem 0.6rem;
+  padding: 0.4rem 0.6rem;
   font-family: "IBM Plex Mono", monospace !important;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px;
+  font-weight: 400;
 }
 
 .button:hover {
-  color: white;
+  background-color: white;
+  color: black;
 }
