@@ -6,6 +6,7 @@ import { useState } from "react";
 import { useToast } from "@chakra-ui/react";
 import { sendContactForm } from "@/lib/mail";
 
+// Initial values of the form and final values after succesful submission.
 const initValues = {
   name: "",
   email: "",
