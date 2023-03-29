@@ -9,7 +9,7 @@ export default function Projects() {
         {/* Map Function */}
         {cardData.map((props) => (
           <Card
-            key={props.id}
+            key={props.title}
             src={props.img.src}
             alt={props.img.alt}
             title={props.title}
