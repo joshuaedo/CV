@@ -1,15 +1,16 @@
-import Spotify from "./images/spotify.png";
-import Netflix from "./images/netflix.png";
-import Arese from "./images/arese.png";
-import Blog from "./images/blog.png";
-import Ryter from "./images/ryter.png";
-import Cleander from "./images/cleander.png";
-import BusinessCard from "./images/business-card.png";
-import DrumKit from "./images/drum.png";
-import DiceGame from "./images/dice.png";
-import StyleYourDiv from "./images/style-your-div.png";
-import CV from "./images/portfolio.png";
+import Spotify from './images/spotify.png';
+import Netflix from './images/netflix.png';
+import Arese from './images/arese.png';
+import Blog from './images/blog.png';
+import Ryter from './images/ryter.png';
+import Cleander from './images/cleander.png';
+import BusinessCard from './images/business-card.png';
+import DrumKit from './images/drum.png';
+import DiceGame from './images/dice.png';
+import StyleYourDiv from './images/style-your-div.png';
+import CV from './images/portfolio.png';
 import Google from './images/google.png';
+import joshuaGPT from './images/joshuaGPT.png';
 // import  from "@/assets/images/.png";
 
 const cardData = [
@@ -18,6 +19,12 @@ const cardData = [
     title: 'Spotify Clone',
     description: 'A clone of the spotify web app, built with NextJs',
     href: 'https://joshuaedo-spotify.vercel.app/',
+  },
+  {
+    img: { src: joshuaGPT, alt: 'joshuaGPT' },
+    title: 'joshuaGPT',
+    description: `A Telegram Bot built with Node.js and powered by OpenAI's chatGPT model`,
+    href: 'https://t.me/joshuaedo_bot',
   },
   {
     img: { src: Netflix, alt: 'Netflix Clone' },
