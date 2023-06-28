@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import joshua from "@/assets/images/joshua-edo.jpg";
 import Navbar from "@/components/Navbar";
 const currentYear = new Date().getFullYear();
 const currentAge = currentYear - 2002;
@@ -18,7 +17,9 @@ export default function Home() {
         <div className="row">
           <div className="col w-100 d-block d-lg-inline">
             <Image
-              src={joshua}
+              src="/joshua-edo.jpg"
+              width={3019}
+              height={3011}
               alt="joshua edo"
               className="hero--img"
               priority
